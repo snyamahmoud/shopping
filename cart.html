@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset='UTF_8'/>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">          <!-- يتم كتابتها من صفحة ال bootstrap -->
+            <meta name="viewport" content="width=device-width, initial-scale=1">    <!-- يتم كتابتها من صفحة ال bootstrap -->
+            <title>SuperMarket</title>
+            <link rel="stylesheet" href="css/bootstrap.css"/> <!--  bootstrap الاصلي ملف ال -->
+            <!--<link rel="stylesheet" href="css/bootstrap RTL.css"/> -->  <!--  ملف يتم انشائه لعمل الموقع عربي -->
+            <link rel="stylesheet" href="css/media.css"/>          <!-- ملف الmedia query -->
+            <link rel="stylesheet" href="css/font-awesome.min.css"/> <!-- ملف يتم تنزيله لاستخدام الايقونات -->
+            <link rel="stylesheet" href="css/style.css"/>          <!-- ملف ال style الاصلي -->
+            <link rel="stylesheet" href="css/default-theme.css"/>      <!-- ملف يتم انشائه لعمل اي تعديلات علي ملف ال style -->
+            <link rel="stylesheet" href="css/hover.css"/>            <!-- ملف لعمل hover علي العنصر-->
+            <link rel="stylesheet" href="css/animate.css"/>          <!-- ملف لعمل animate علي العنصر -->
+            <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap" rel="stylesheet"><!-- ملف لاستخدام انواع خطوط للكتابة -->
+
+
+            <!--[if lt IE 9]->
+            <script src="js/html5shiv.min.js"></script>
+            <script src="js/respond.min.js"></script>
+            <![endif]-->
+
+        </head>
+     <body>
+      
+       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="navbar1">
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shopping.html">Shopping</a></li>
+      <li><a href="Product.html">Product</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      
+
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sort By <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="None">None</a></li>
+          <li><a href="Price">Price</a></li>
+          <li><a href="Alphabetical">Alphabetical</a></li>
+          <li><a href="Rating">Rating</a></li>
+          
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">available shopping categories <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+         <li><a href=""><i class="fa fa-cc-paypal"></i> paypal</a></li>
+         <li><a href=""><i class="fa fa-cc-visa"></i> visa</a></li>
+         <li><a href=""><i class="fa fa-cc-jcb"></i> jcb</a></li>
+          
+          
+        </ul>
+      </li>
+
+    </ul>
+   
+    <ul class="nav navbar-nav ">
+      <li class="active"><a href="cart.html">Cart</a></li>
+       <li><a href="about.html">About</a></li>
+
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> number of items show<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">chicken</a></li>
+          <li><a href="#">Borgar</a></li>
+          <li><a href="#">Makaron</a></li>
+          <li><a href="#">Passta</a></li>
+          <li><a href="#">Furit Salad</a></li>
+          <li><a href="#">Meet</a></li>
+          <li class="divider"></li>
+          <li><a href="#">More...</a></li>
+
+        </ul>
+      </li>       
+         <li> <a href="index.html"><button>In Stock Only</button></a></li>
+        <li style="margin: 0"><a href="cart.html"><span style="float: right; margin-top: -6px;" class="glyphicon glyphicon-shopping-cart"></span></a></li> 
+       
+
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>
+
+         <h5 class="main">Your Shopping Cart is empty</h5>
+         <img style ="margin-left: 30%;margin-top: 36px;width: 40%;" src="file:///C:/Users/Smart/Downloads/pexels-photo-2292919.jpeg">
+        <table border = "1px">
+            <thead>
+                <tr>
+                    <th width="100px">Image</th>
+                    <th width ="200px">Name</th>
+                    <th width ="200px">Price</th>
+                    <th width ="200px">quantity</th>
+                    <th width ="200px">total cost</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+                <tr>
+                    <td><img  style=" width: 50px;" class="img-thumbnail"  src="file:///C:/Users/Smart/Downloads/chicken-close-up-dinner-265393.jpg"></td>
+                    <td>chicken</td>
+                    <td>20$</td>
+                    <td><input style ="width: 86px;border: 2px solid #2098d1;" type="text"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><img   style=" width: 50px" class="img-thumbnail" src="file:///C:/Users/Smart/Downloads/beef-bottle-bread-750073.jpg"></td>
+                    <td>Borgar</td>
+                    <td>30$</td>
+                    <td><input style ="width: 86px;border: 2px solid #2098d1;" type="text"></td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td><img  style=" width: 50px;" class="img-thumbnail"  src="file:///C:/Users/Smart/Downloads/chicken-close-up-dinner-265393.jpg"></td>
+                    <td>Pasta</td>
+                    <td>40$</td>
+                    <td><input style ="width: 86px;border: 2px solid #2098d1; " type="text"></td>
+                    <td></td>
+                    
+
+                </tr>
+                <tr>
+                    <td><img   style=" width: 50px" class="img-thumbnail" src="file:///C:/Users/Smart/Downloads/beef-bottle-bread-750073.jpg"></td>
+                    <td>Meet</td>
+                    <td>20$</td>
+                    <td><input style ="width: 86px;border: 2px solid #2098d1;" type="text"></td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td><img  style=" width: 50px;" class="img-thumbnail"  src="file:///C:/Users/Smart/Downloads/chicken-close-up-dinner-265393.jpg"></td>
+                    <td>Makaron</td>
+                    <td>50$</td>
+                    <td><input style ="width: 86px;border: 2px solid #2098d1;" type="text"></td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td><img   style=" width: 50px" class="img-thumbnail" src="file:///C:/Users/Smart/Downloads/beef-bottle-bread-750073.jpg"></td>
+                    <td>Shawerma</td>
+                    <td>25$</td>
+                    <td><input style ="width: 86px;border: 2px solid #2098d1;" type="text"></td>
+                    <td></td>
+
+                </tr>
+            </tbody>
+        </table>
+        
+        <form class="info" method="post" action="shopping.html">
+            <h3 style="margin-left: 10%; font-weight: bold; color: #2098d1;">Enter Shipping Details</h3><br>
+         <input type="text" placeholder="Your Name" required><br><br>
+         <input type="text" placeholder="Address" required><br><br>
+         <input type="text" placeholder="city" required><br><br>
+         <input type="text" placeholder="Phone Number" required><br><br>
+        </form>
+        
+       <section class="detalis-us">
+         <div class="detalis">
+            <span style="background-color: darkorange; position: relative; top: 14px;">subtotal cost : </span><br><br>
+            <span>shopping cart : </span><br><br>
+            <span>shipping cost : </span><br><br>
+            <span>the tax cost : </span><br><br>
+            <span style="background-color: darkorange;">total cost : </span><br><br>
+
+         </div>
+          <button class="checkout">Ceckout</button>
+
+       </section>
+       
+
+ <section class="footer-us">
+      <div class="container">
+        <div class="footer">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+     <ul class="list-unstyled">
+      <li><a style ="color: blue;" href="#"><i class="fa fa-facebook-square fa-3x"></i></a></li>
+      <li><a  style ="color: red;" href="#"><i class="fa fa-google-plus-square fa-3x"></i></a></li>
+      <li><a  style ="color: #2098d1;" href="#"><i class="fa fa-twitter-square fa-3x"></i></a></li>
+      <li><a  style ="color: dodgerblue;" href="#"><i class="fa fa-linkedin-square fa-3x"></i></a></li>
+    </ul>
+    <input type="text" placeholder="search">
+    <input type="submit">
+        <p class="text-center">All Rights Reserved &copy.2019. WebSite.com</p>
+      </div>
+ </section>
+
+     
+      
+
+     
+     
+     
+
+           <script src="js/jquery-1.11.1.min.js"></script><!-- عبارة عن كود خاص بال JQuery -->
+           <script src="js/bootstrap.min.js"></script><!-- كود خاص بال JavaScript  الموجودة في ملف bootstrap -->
+           <script src="js/file.js"></script><!-- ده ملف نقوم بإنشائه -->
+           <script src="js/jquery.nicescroll.min.js"></script>
+           <script src="js/wow.min.js"></script>
+           <script>new WOW().init();</script><!-- عبارة عن دالة لازم تنكتب عشان ال WOW  تشتغل -->
+
+       </body>
+   </html>
+
+
+
+
+
+             
+              
+
+           
+
+
